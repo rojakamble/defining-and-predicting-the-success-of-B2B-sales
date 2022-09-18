@@ -1,0 +1,79 @@
+{% extends 'userbase.html' %}
+{% load static %}
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+<!-- Displays user welcome message! -->
+        {% block contents %}
+        <center><h2 style="color:#861983">Welcome to  {{request.session.userid}}</h2></center>
+
+<div style="width:500px;height:450px;overflow:scroll;">
+    <form method="post" autocomplete="off">
+       {% csrf_token %}
+<!-- Developed by Harsha Nadendla -->
+<!-- Table to display product details -->
+<table >
+    <tr>
+        <h2 align="center"><b>Product Details</b></h2>
+    </tr>
+
+
+    <tr>
+        <td colspan="3"><img src="{{dict.images.url}}"  style="width:20em;height:20em;"></td>
+    </tr>
+    <tr>
+        <h2><td style="color:black">Product</td></h2>
+        <td style="color:black">:</td>
+       <td style="color:black">{{dict.productname}}</td>
+    </tr>
+    <tr>
+        <td style="color:black">Vendor</td>
+        <td style="color:black">:</td>
+        <td style="color:black">{{dict.vendorname}}</td>
+    </tr>
+    <tr>
+<td style="color:black">Product Version Name</td>
+        <td style="color:black">:</td>
+        <td style="color:black">{{dict.productversion}}</td>
+    </tr>
+    <tr>
+        <td style="color:black">Product Color</td>
+        <td style="color:black"> :</td>
+        <td style="color:black">{{dict.color}}</td>
+    </tr>
+    <tr>
+        <td style="color:black">Product Price</td>
+        <td style="color:black">:</td>
+        <td style="color:black">{{dict.price}}</td>
+    </tr>
+    <tr>
+        <td style="color:black">Product Featuers</td>
+        <td style="color:black">:</td>
+        <td style="color:black">{{dict.features}}</td>
+    </tr>
+
+    <tr>
+        <td align="center" colspan="3"><a href="/orderproduct?id={{dict.id}}&price={{dict.price}}&productname={{dict.productname}} ">Buy</a> </td>
+    </tr>
+
+
+    </table>
+
+    </form>
+    </div>
+
+        {% endblock %}
+
+</body>
+</html>

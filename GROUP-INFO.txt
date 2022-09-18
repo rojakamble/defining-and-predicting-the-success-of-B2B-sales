@@ -1,0 +1,27 @@
+Group name: Soul-Cynics
+Group size: 8
+Group leader:Rishwanth Reddy Baddipadaga
+
+File creator: Roja Kamble
+Skills: C, C++, Core Java, Testing
+
+Team member 1: Divya Kumbham
+Skills : C, Java, Javascript, sql, Testing, Angular.
+
+Team Member 2: Meghana Thimmapuram
+Skills :C, C++, Java, SQL, Python
+
+Team Member 3: Preethi Mudireddy
+Skills :C, C++, Java, SQL, Python
+
+Team member 4: Rishwanth Reddy Baddipadaga
+Skills : C, Java, Javascript, SQL, Python, Angular.
+
+Team member 5: Sai Nikhil Chitturi
+Skills : C, Java Script , Python, SQL
+
+Team Member 6: Neha Geereddy
+Skills : C, Java, Python, DB2, SQL, Cobol
+
+Team Member 7: Sri Harsha Swaraj Nadendla
+Skills : C, C++, Python, Javascript
